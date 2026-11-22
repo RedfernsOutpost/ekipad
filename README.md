@@ -41,6 +41,7 @@ already in your pocket, **as if it were a normal gamepad**. It should be:
 | 🖥️ **Screen sharing** | Flip to Screen mode at any time to see the Mac on the phone (low-latency H.264), with your controls overlaid, or use the phone as a touchpad |
 | 🌙 **Light & dark** | Both apps follow your system or stay light or dark. Dark mode is the station after hours |
 | 👥 **Up to 4 players** | Each phone gets its own track (EK 01–04), player colour and route |
+| 🚉 **Guided tour** | Both apps open with a short tour, a ride along a line of stops, that explains pairing, what each phone controls, routes and auto-switch. Replay it anytime |
 | ⓘ **Built-in help** | Tap any title for a short explanation of what it does |
 
 <p align="center">
@@ -55,6 +56,22 @@ already in your pocket, **as if it were a normal gamepad**. It should be:
 <img src="media/ios-departures.png" width="49%" alt="iPhone departure board settings">
 <img src="media/ios-pictogram-code.png" width="49%" alt="Pictogram pairing code">
 </p>
+
+## Getting started
+
+Both apps greet you with a short tour the first time you open them, drawn as a train line with one station per
+step:
+
+| Mac (Ekipad Host) | iPhone (Ekipad) |
+|---|---|
+| **Welcome** · what Ekipad does | **Welcome aboard** · open Ekipad Host on the Mac |
+| **Gate** · pair a phone: click Allow, scan the QR code, or tap the 4 pictograms | **Connecting** · finds the Mac by itself; pair once by Allow, QR or pictograms |
+| **Platform** · each phone's track and what it controls | **Make it yours** · edit, resize, hide or split buttons; double-tap a stick for L3/R3 |
+| **Routes** · a route is a control profile, e.g. a Zelda route | **Handy extras** · screen mode, gyro aiming, ⓘ help |
+| **Auto-switch** · link a game to a route | |
+| **One permission** · allow Key Output, right from the tour | |
+
+Replay it from **Help → Ekipad Tour** on the Mac or **Settings → Device → Show tour** on the iPhone.
 
 ## How it works
 
@@ -105,6 +122,7 @@ controller (or as keyboard and mouse, for games without controller support).
 - [x] Separate face buttons in the layout editor
 - [x] Stick click (L3/R3)
 - [x] Cleaner controller design, light and dark modes, built-in help
+- [x] First-launch guided tour on both apps
 
 **Next**
 - [ ] **Ekipad Dongle.** A ~$10 ESP32-S3 board that shows up as a genuine Bluetooth/USB gamepad, for consoles, PCs and TVs, even without the Mac app.
