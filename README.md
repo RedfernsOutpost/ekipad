@@ -3,11 +3,11 @@
 <h1 align="center">Ekipad 駅</h1>
 
 <p align="center"><b>Turn your iPhone into a game controller for your Mac.</b><br>
-Bluetooth and peer-to-peer Wi-Fi at the same time · no router needed · screen sharing when you want it</p>
+Shows up on your Mac as an Xbox controller · Bluetooth and peer-to-peer Wi-Fi at the same time · no router needed</p>
 
 <p align="center"><img src="media/ios-controller.png" width="720" alt="Ekipad controller on iPhone"></p>
 
-> **Status:** early development (v0.1 prototype, built and tested in the simulator and on a Mac).
+> **Status:** early development. v0.1 runs on a real iPhone and Mac, and the virtual Xbox controller works in games.
 > Source code isn't public yet. This repo has the project overview, roadmap and updates.
 > Questions and ideas are welcome in [Issues](../../issues).
 
@@ -32,6 +32,7 @@ already in your pocket, **as if it were a normal Bluetooth gamepad**. It should 
 | ✈️ **No network needed** | Peer-to-peer Wi-Fi is the same radio AirDrop uses. Wi-Fi only has to be switched on, not connected |
 | 🔳 **Three ways to pair** | Scan a QR code with the iPhone Camera · tap a 4-pictogram code (TRAIN · MOUNTAIN · FISH …) · or just let the phone wait at the Mac's "ticket gate" and click Allow |
 | ✏️ **Layout editor** | Drag, resize, hide and fade any control. Snaps to a grid and stays inside the safe area of every iPhone. Presets: Standard, Retro, Dual Stick |
+| 🕹️ **Virtual Xbox controller** | Your Mac sees a real Xbox Wireless Controller, so Steam, SDL games, native ports and Apple's game controller support just work. Game rumble buzzes the phone. One controller per phone |
 | ⌨️ **Routes** | Map the pad to keyboard and mouse per game: built-ins for emulators, PC-style WASD + mouse look, mouse mode, and native Switch ports. Rebind anything in one click |
 | 🖥️ **Screen sharing** | Flip to Screen mode at any time to see the Mac on the phone (low-latency H.264), with your controls overlaid, or use the phone as a touchpad |
 | 👥 **Up to 4 players** | Each phone gets its own track (EK 01–04) and its own route |
@@ -52,17 +53,18 @@ already in your pocket, **as if it were a normal Bluetooth gamepad**. It should 
  iPhone · Ekipad                                  Mac · Ekipad Host
  ┌──────────────────────┐   Bluetooth LE          ┌───────────────────────────┐
  │ touch controls       │ ──────────────────────▶ │ merges both links,        │──▶ keyboard & mouse (today)
- │ layout editor        │   peer-to-peer Wi-Fi    │ drops duplicates,         │──▶ virtual Xbox controller (planned)
+ │ layout editor        │   peer-to-peer Wi-Fi    │ drops duplicates,         │──▶ virtual Xbox controller
  │ screen view          │ ──────────────────────▶ │ players 1–4               │
  └──────────────────────┘ ◀── screen (H.264) ──── └───────────────────────────┘
 ```
 
 **Why does the Mac need an app?** iOS doesn't let apps pretend to be a Bluetooth controller, so the phone can't
-pair with the Mac like a real gamepad. Ekipad Host receives the input and passes it on to your games.
+pair with the Mac like a real gamepad. Ekipad Host receives the input and presents it to macOS as a virtual Xbox
+controller (or as keyboard and mouse, for games without controller support).
 
 ## What works with what
 
-| | Today (keyboard/mouse routes) | With the virtual controller (planned) |
+| | Keyboard/mouse routes | Virtual Xbox controller |
 |---|---|---|
 | Emulators (RetroArch, OpenEmu, Dolphin…) | ✅ | ✅ |
 | Native Switch ports | ✅ keyboard player | ✅ as a controller |
@@ -80,9 +82,12 @@ pair with the Mac like a real gamepad. Ekipad Host receives the input and passes
 - [x] Keyboard/mouse routes and a route editor, including a Switch-port preset
 - [x] Screen sharing with controls overlaid, plus a touchpad mode
 
+**v0.2: done**
+- [x] **Virtual Xbox controller on the Mac.** Steam, SDL games and macOS see a real controller, and game rumble buzzes the phone
+- [x] Runs on a real iPhone and Mac
+
 **Next**
-- [ ] **Virtual Xbox controller on the Mac.** Steam, SDL games and macOS see a real controller, and game rumble buzzes the phone. *Built; waiting on Apple's HID virtual-device entitlement.*
-- [ ] **Ekipad Dongle.** A ~$10 ESP32-S3 board that shows up as a genuine Bluetooth/USB gamepad. Works with everything, with no entitlement, and even without the Mac app.
+- [ ] **Ekipad Dongle.** A ~$10 ESP32-S3 board that shows up as a genuine Bluetooth/USB gamepad, for other devices and for using it without the Mac app.
 - [ ] Real-device tuning: Bluetooth latency, haptics, multi-touch feel
 - [ ] Automatic per-game routes (switch when a game comes to the front)
 - [ ] Motion/gyro aiming
