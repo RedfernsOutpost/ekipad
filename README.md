@@ -149,6 +149,7 @@ controller (or as keyboard and mouse, for games without controller support).
 Everything stays between your iPhone and your Mac: no accounts, no cloud, no analytics. Connections are
 authenticated with keys that never leave your devices. Screen sharing only goes to phones you've paired and that
 are currently connected, and you can turn it off on the Mac.
+Full details: [Privacy Policy](PRIVACY.md).
 
 ## Design
 
