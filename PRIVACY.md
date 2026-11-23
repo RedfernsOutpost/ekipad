@@ -1,6 +1,6 @@
 # Ekipad Privacy Policy
 
-*Effective: November 22, 2026*
+*Effective: November 23, 2026*
 
 This policy covers **Ekipad** for iPhone and **Ekipad Host** for Mac (together, "Ekipad").
 
@@ -20,7 +20,7 @@ servers. Everything it does happens on your iPhone and your own Mac.
 | **Motion sensors** (iPhone, only if you turn on Gyro) | To aim by tilting the phone | Sent only to your paired Mac, as controller input |
 | **Accessibility / input control** (Mac) | To press the keys and move the mouse your controller is mapped to, and to create the virtual game controller | Stays on your Mac |
 | **Screen Recording** (Mac, only if you turn on Screen Share) | To show your Mac's screen on your paired phone | Streamed only to your paired phone, over your local connection |
-| **Update check** (Mac download version only) | About once a day, Ekipad Host reads the public list of releases on GitHub to see if a newer version exists. Turn it off in the menu bar: **Check for Updates Automatically**. | A plain web request to GitHub. It sends nothing about you; like any web request, GitHub sees your IP address and the app's version. See GitHub's privacy statement. |
+| **Update check** (Mac download version only) | About once a day, Ekipad Host reads the public list of releases on GitHub to see if a newer version exists. Turn it off in the menu bar: **Check for Updates Automatically**. When you click **Install and Relaunch**, it downloads the new version from the same GitHub release. | A plain web request to GitHub. It sends nothing about you; like any web request, GitHub sees your IP address and the app's version. See GitHub's privacy statement. |
 
 ## What's stored on your devices
 
@@ -35,7 +35,8 @@ removes it (the Keychain key may remain until you reset the device or remove it 
 ## What Ekipad doesn't do
 
 - No data is sent to us or to anyone else. We have no servers that receive data from the app. The only internet
-  request is the Mac app's update check described above, which downloads public information and uploads none.
+  requests are the Mac app's update check and update download described above, which download public
+  information and upload none.
 - No tracking, no advertising identifiers, no third-party SDKs, no crash or analytics reporting.
 - No data is sold or shared.
 
