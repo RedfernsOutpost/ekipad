@@ -15,7 +15,10 @@ Shows up as an Xbox controller · Bluetooth, peer-to-peer Wi-Fi and USB at the s
 | **iPhone: Ekipad** | Coming to the App Store. |
 
 Setup takes a minute: open Ekipad Host, allow Key Output (Accessibility) when asked, open Ekipad on your iPhone and
-click **Allow** at the Gate. The built-in tour walks you through it. Questions or problems:
+click **Allow** at the Gate. The built-in tour walks you through it.
+
+📖 **[User guide (Wiki)](https://github.com/RedfernsOutpost/ekipad/wiki)**: pairing, connections, routes, layouts,
+the Mouse layout, gyro aiming, every setting, and troubleshooting. Questions or problems:
 [open an issue](https://github.com/RedfernsOutpost/ekipad/issues).
 
 > **Status:** early development (v0.3). Runs on a real iPhone and Mac, and the virtual Xbox controller works in games.
