@@ -7,6 +7,17 @@ Shows up as an Xbox controller · Bluetooth, peer-to-peer Wi-Fi and USB at the s
 
 <p align="center"><img src="media/ios-controller.png" width="720" alt="Ekipad controller on iPhone"></p>
 
+## Download
+
+| | |
+|---|---|
+| **Mac: Ekipad Host 1.0** (free, required) | **[Download the latest release](https://github.com/RedfernsOutpost/ekipad/releases/latest)** (`Ekipad-Host-1.0.zip` or `.dmg`). macOS 14 or later; the virtual game controller needs macOS 15. Signed with Developer ID and notarized by Apple. |
+| **iPhone: Ekipad** | Coming to the App Store. |
+
+Setup takes a minute: open Ekipad Host, allow Key Output (Accessibility) when asked, open Ekipad on your iPhone and
+click **Allow** at the Gate. The built-in tour walks you through it. Questions or problems:
+[open an issue](https://github.com/RedfernsOutpost/ekipad/issues).
+
 > **Status:** early development (v0.3). Runs on a real iPhone and Mac, and the virtual Xbox controller works in games.
 > Source code isn't public yet. This repo has the project overview, roadmap and updates.
 > Questions and ideas are welcome in [Issues](../../issues).
