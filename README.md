@@ -12,7 +12,7 @@ Shows up as an Xbox controller · Bluetooth, peer-to-peer Wi-Fi and USB at the s
 | | |
 |---|---|
 | **Mac: Ekipad Host 1.3** (free, required) | **[Download the latest release](https://github.com/RedfernsOutpost/ekipad/releases/latest)** (`Ekipad-Host-1.3.zip` or `.dmg`). macOS 14 or later; the virtual game controller needs macOS 15. Signed with Developer ID and notarized by Apple. |
-| **iPhone: Ekipad** | Coming to the App Store. |
+| **iPhone: Ekipad** | [Get it on the App Store](https://apps.apple.com/app/id6838139422). |
 
 Setup takes a minute: open Ekipad Host, allow Key Output (Accessibility) when asked, open Ekipad on your iPhone and
 click **Allow** at the Gate. The built-in tour walks you through it.
