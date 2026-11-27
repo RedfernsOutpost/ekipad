@@ -5,6 +5,9 @@
 <p align="center"><b>Turn your iPhone into a game controller for your Mac.</b><br>
 Shows up as an Xbox controller · Bluetooth, peer-to-peer Wi-Fi and USB at the same time · no router needed</p>
 
+<p align="center"><a href="https://apps.apple.com/app/id6838139422"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store" height="48"></a><br>
+<a href="https://github.com/RedfernsOutpost/ekipad/releases/latest"><b>Download Ekipad Host for Mac</b></a> (free, needed on the Mac)</p>
+
 <p align="center"><img src="media/ios-controller.png" width="720" alt="Ekipad controller on iPhone"></p>
 
 ## Download
@@ -12,7 +15,7 @@ Shows up as an Xbox controller · Bluetooth, peer-to-peer Wi-Fi and USB at the s
 | | |
 |---|---|
 | **Mac: Ekipad Host 1.3** (free, required) | **[Download the latest release](https://github.com/RedfernsOutpost/ekipad/releases/latest)** (`Ekipad-Host-1.3.zip` or `.dmg`). macOS 14 or later; the virtual game controller needs macOS 15. Signed with Developer ID and notarized by Apple. |
-| **iPhone: Ekipad** | [Get it on the App Store](https://apps.apple.com/app/id6838139422). |
+| **iPhone: Ekipad 1.0** (free) | **[Get it on the App Store](https://apps.apple.com/app/id6838139422)**. iOS 17 or later. |
 
 Setup takes a minute: open Ekipad Host, allow Key Output (Accessibility) when asked, open Ekipad on your iPhone and
 click **Allow** at the Gate. The built-in tour walks you through it.
@@ -21,8 +24,8 @@ click **Allow** at the Gate. The built-in tour walks you through it.
 the Mouse layout, gyro aiming, every setting, and troubleshooting. Questions or problems:
 [open an issue](https://github.com/RedfernsOutpost/ekipad/issues).
 
-> **Status:** early development (v0.3). Runs on a real iPhone and Mac, and the virtual Xbox controller works in games.
-> Source code isn't public yet. This repo has the project overview, roadmap and updates.
+> **Status:** Ekipad 1.0 is out on the App Store, and Ekipad Host 1.3 is the current Mac app.
+> Source code isn't public yet. This repo has the project overview, roadmap, Mac downloads and updates.
 > Questions and ideas are welcome in [Issues](../../issues).
 
 ---
@@ -138,9 +141,13 @@ controller (or as keyboard and mouse, for games without controller support).
 - [x] Cleaner controller design, light and dark modes, built-in help
 - [x] First-launch guided tour on both apps
 
+**v1.0: done**
+- [x] Ekipad on the App Store
+- [x] Ekipad Host signed with Developer ID and notarized by Apple
+- [x] Ekipad Host updates itself (Install and Relaunch, from Host 1.2)
+
 **Next**
 - [ ] **Ekipad Dongle.** A ~$10 ESP32-S3 board that shows up as a genuine Bluetooth/USB gamepad, for consoles, PCs and TVs, even without the Mac app.
-- [ ] Notarized Mac build and a TestFlight beta
 - [ ] Layout import/export and sharing; iPad support
 - [ ] Analog triggers and more haptic detail
 
